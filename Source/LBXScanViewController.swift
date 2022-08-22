@@ -113,6 +113,11 @@ open class LBXScanViewController: UIViewController {
         scanObj?.start()
     }
     
+    open func stopScan() {
+        qRScanView?.stopScanAnimation()
+        scanObj?.stop()
+    }
+    
     open func drawScanView() {
         if qRScanView == nil {
             qRScanView = LBXScanView(frame: view.frame, vstyle: scanStyle!)
