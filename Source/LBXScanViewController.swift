@@ -150,7 +150,7 @@ open class LBXScanViewController: UIViewController {
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
-        NSObject.cancelPreviousPerformRequests(withTarget: self)
+//        NSObject.cancelPreviousPerformRequests(withTarget: self)
         qRScanView?.stopScanAnimation()
         scanObj?.stop()
     }
