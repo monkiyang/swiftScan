@@ -9,7 +9,9 @@
 import UIKit
 import AVFoundation
 import Photos
-import AssetsLibrary
+//https://github.com/MxABC/swiftScan/issues/126
+//xcode26 已经废弃AssetsLibrary 请删除该行引用 #126
+//import AssetsLibrary
 
 
 
